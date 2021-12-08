@@ -1,0 +1,132 @@
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.sign_in_container {
+  background-image: url("../../assets/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sign_in_inner_container {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.541);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sign_in_div {
+  background-color: white;
+  height: 70%;
+  width: 40%;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sign_in_div_elements {
+  height: 70%;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+
+.sign_in_div_heading {
+  margin-bottom: 10%;
+}
+
+.sign-in-text {
+  font-size: 2rem;
+  font-weight: bold;
+  color: rgb(51, 3, 129);
+  letter-spacing: 1px;
+}
+
+.sign_in_div_input {
+  margin-bottom: 10%;
+}
+
+.sign_in_div_input p {
+  font-size: 1.4rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin-bottom: 1%;
+}
+
+.sign_in_div_input input {
+  width: 100%;
+  font-size: 2rem;
+  border: 2px solid rgba(82, 9, 199, 0.774);
+  border-radius: 5px;
+  outline: none;
+  color: rgba(48, 48, 48, 0.801);
+  padding: 1%;
+}
+
+.sign_in_div_button {
+  width: 100%;
+  text-align: center;
+}
+
+.sign_in_div_button button {
+  font-size: 1.3rem;
+  width: 35%;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  background-color: rgb(2, 170, 2);
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+  cursor: pointer;
+}
+
+.sign_in_div_button button:hover {
+  transition-duration: 0.1s;
+  background-color: rgb(0, 192, 0);
+}
+
+.sign_in_div_button button:active {
+  transform: scale(1.1);
+  transition-duration: 0.3s;
+  background-color: rgb(0, 192, 0);
+}
+
+.phone_number_error {
+  font-size: 1.2rem;
+  color: red;
+}
+
+@media (max-width: 800px) {
+  .sign_in_div {
+    width: 60%;
+  }
+}
+
+@media (max-width: 500px) {
+  .sign_in_div {
+    width: 90%;
+  }
+
+  .sign_in_div_button button {
+    width: 45%;
+  }
+}
